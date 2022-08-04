@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+      <link href="static/css/style.css" rel="stylesheet">
+      <div style = "text-align: right;" width = "400">
+        <img src="yummy.gif">
+      </div>
+</head>
+<body>  
+    <h1>
+        <center>
+            The top recipes:
+        </center>
+    </h1>
+    <ul>
+        {% for key, value in rdict.items() %}
+        <li>{{rdict[key]['title']}}</li>
+        <li>{{rdict[key]['text']}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

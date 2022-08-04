@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body> 
+    <form method="post" action="/signup">
+        <!-- Heading -->
+        <h2>
+            Create an account
+        </h2>
+
+        <!-- Subheading -->
+        <p >
+            Please fill up your information below to sign up
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        <div>
+            <label>Full_name*</label>
+            <div class="input-group">
+                <input type="full_name"  name="full_name" maxlength="12">
+            </div>
+        </div>
+        <div>
+            <label>Username*</label>
+            <div class="input-group">
+                <input type="username"  name="username" maxlength="12">
+            </div>
+  <input type="submit"/>
+        </div>
+    </form>
+    <br>
+    <a href="/signin"><button>sign in</button></a>
+    <br>
+    <br>
+    <a href="/addrecipes"><button>Upload your own recipe</button></a>
+</body>
+</html>      

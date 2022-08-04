@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title style="color: blue;">Add your own recipe!</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>  
+    <a href="/signout"><button>signout</button></a>
+    <form method = "post" action="/addrecipes">
+        <div>
+            <label>The name of the recipe*</label>
+            <div>
+                <input type="title"  name="title" id="titleStr" required>
+            </div>
+        </div>
+
+        <div>
+            <label>The recipe itself*</label>
+            <div>
+                <input type="text"  name="text" id="textStr" required>
+            </div>
+        </div>
+        <br>
+        <div>
+            
+            <div>
+                <input type="submit"/>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+    </form>
+    <a href="/recipes"><button>Click me to see all the recipes that people uploaded!</button></a>
+</body>
+</html>
